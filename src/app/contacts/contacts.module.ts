@@ -4,6 +4,9 @@ import { ContactsListComponent } from './contacts-list/contacts-list.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { ContactAddComponent } from './contact-add/contact-add.component';
+import { RouterLink } from '@angular/router';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -13,7 +16,10 @@ import { ContactAddComponent } from './contact-add/contact-add.component';
   imports: [
     CommonModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    RouterLink,
+    MatInputModule,
+    MatFormFieldModule
   ]
 })
 export class ContactsModule { }
