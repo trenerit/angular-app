@@ -5,6 +5,7 @@
             <th>Nazwisko</th>
             <th>Imię</th>
             <th>Nr telefonu</th>
+            <th>Akcja</th>
         </tr>
     </thead>
     <tbody>
@@ -13,6 +14,16 @@
             <td>{{ contact.surname }}</td>
             <td>{{ contact.firstName }}</td>
             <td>{{ contact.phoneNumber }}</td>
+            <td>
+                <button (click)="delContact(contact.id)" mat-mini-fab color="warn">
+                    <mat-icon>delete</mat-icon>
+                </button>
+                <!-- <button class="btn btn-danger">Usuń</button> -->
+            </td>
         </tr>
     </tbody>
 </table>
+
+<button mat-fab color="primary">
+ <mat-icon>add</mat-icon>
+</button>
