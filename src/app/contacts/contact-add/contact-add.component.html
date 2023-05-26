@@ -1,6 +1,15 @@
-<form>
-    <mat-form-field>
-        <mat-label>Input</mat-label>
-        <input matInput>
-      </mat-form-field>
+<form [formGroup]="addForm">
+    <mat-form-field appearance="outline">
+        <mat-label>Nazwisko</mat-label>
+        <input formControlName="surname" matInput>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Imię</mat-label>
+        <input formControlName="firstname" matInput>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Nr telefonu</mat-label>
+        <input formControlName="phoneNumber" matInput>
+    </mat-form-field>
+    <button mat-stroked-button color="primary">Zapisz</button>
 </form>

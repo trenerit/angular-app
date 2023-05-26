@@ -7,6 +7,7 @@ import { ContactAddComponent } from './contact-add/contact-add.component';
 import { RouterLink } from '@angular/router';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatIconModule,
     RouterLink,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    ReactiveFormsModule
   ]
 })
 export class ContactsModule { }

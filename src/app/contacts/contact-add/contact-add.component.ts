@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-contact-add',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class ContactAddComponent {
 
+  constructor(private fb: FormBuilder) {}
+
+  protected addForm: any = this.fb.group({
+    surname: 'Kania',
+    firstname: 'Piotr',
+    phoneNumber: '12334455'
+  });
 }
